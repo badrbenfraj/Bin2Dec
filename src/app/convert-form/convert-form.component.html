@@ -1,0 +1,15 @@
+<div class="input-bar">
+    <div class="input-bar-item width100">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" #binaryNumber placeholder="Enter binary number...">
+            </div>
+        </form>
+        <div *ngIf="!(binaryNumber.value.includes('1') || binaryNumber.value.includes('0'))" class="alert alert-danger" role="alert">
+            Should only conatin 0 or 1.
+        </div>
+    </div>
+    <div class="input-bar-item">
+        <input type="button" value="Convert" class="btn btn-info" (click)="convertToDec(binaryNumber.value)">
+    </div>
+</div>

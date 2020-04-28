@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+.form-group input{
+    display: inline-block !important;
+}
+
+input{
+    outline: none;
+}
+
+.input-bar {
+    display: table;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.input-bar-item {
+    display: table-cell;
+}
+
+.input-bar-item > input {
+    margin-left: 5px;
+}
+    
+.width100 {
+  width: 100%;
+}
+
+.result{
+    margin-top: 50px;
+    height: 80px;
+    font-size: 40px;
+}
