@@ -2,10 +2,10 @@
     <div class="input-bar-item width100">
         <form>
             <div class="form-group">
-                <input type="text" class="form-control" #binaryNumber placeholder="Enter binary number...">
+                <input type="number" class="form-control" #binaryNumber placeholder="Enter binary number...">
             </div>
         </form>
-        <div *ngIf="!(binaryNumber.value.includes('1') || binaryNumber.value.includes('0'))" class="alert alert-danger" role="alert">
+        <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
             Should only conatin 0 or 1.
         </div>
     </div>

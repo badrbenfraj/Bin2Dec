@@ -126,8 +126,13 @@
               "devServerTarget": "Bin2Dec:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Bin2Dec"
 }
